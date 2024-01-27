@@ -66,7 +66,6 @@ async function main() {
         client.user?.setPresence({ activities: [{ name: `fxrst`, type: ActivityType.Listening }], status: 'idle' });
     })
 
-    // InstagramManager.generateWebhook();
     startLog(client.user?.tag || "", process.env.PREFIX || "!", botCommands._commands.size, botCommands._slashs.length);
 }
 
